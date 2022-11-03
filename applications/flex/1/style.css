@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lato:wght@400;700;900&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*:not(i):not(.fa) {
+    font-family: 'Lato', 'Gowun Dodum', sans-serif;
+}
+button {
+    font-size: 18px;
+    cursor: pointer;
+}
+button:active {
+    transform: translateY(2px);
+}
+button:hover {
+    background-color: #000;
+}
+body{
+    font-family: 'Lato', 'Gowun Dodum', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0;
+    background-image: linear-gradient(45deg, #3b599950, #55acee50, #dd4b3950) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-form {
+    width: 650px;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.sns-login {
+    margin: 20px 0;
+    display: flex;
+}
+.btn {
+    flex: 1;
+    margin-right: 5px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+}
+.btn:last-child {
+    margin-right: 0;
+}
+.facebook {
+    background-color: #3b5999;
+}
+.twitter {
+    background-color: #55acee;
+}
+.google {
+    background-color: #dd4b39;
+}
+.field {
+    display: flex;
+    margin: 15px 0;
+}
+.field label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.field input {
+    flex: 4;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.btn-login {
+    border: none;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .login-form {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 20px #eee;
+    }
+    .sns-login {
+        flex-direction: column;
+    }
+    .btn {
+        margin-right: 0;
+        margin: 5px 0;
+    }
+    .field {
+        flex-direction: column;
+    }
+    .field label {
+        margin: 5px 0;
+    }
+    .btn-login {
+        width: 100%;
+        margin: 15px 0;
+    }
+}

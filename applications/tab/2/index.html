@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>tab jquery</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h1><span>차 이야기</span> 차의 종류를 알아볼까요?</h1>
+            <input type="search" name="q" placeholder="무엇을 찾으시나요?">
+        </header>
+        <nav>
+            <ul class="tab-menu clearfix">
+                <li class="active" data-alt="tab1"><a href="#none1">녹차(불발효차)</a></li>
+                <li data-alt="tab2"><a href="#none2">가루차</a></li>
+                <li data-alt="tab3"><a href="#none3">황차</a></li>
+                <li data-alt="tab4"><a href="#none4">발효차</a></li>
+                <li data-alt="tab5"><a href="#none5">후발효차</a></li>
+            </ul>
+        </nav>
+        <section class="tab-content-box">
+            <div class="tab-content clearfix active" id="tab1">
+                <h2>녹차(불발효차)</h2>
+                <img src="images/greentea.png" alt="greentea">
+                <p>
+                    녹차는 4월 20일 곡우 때부터 차의 여린 잎을 따서 무쇠나 돌솥에 덖거나 쪄서 산화 효소 활동을 중지시킨 것을 말한다. 덖음차는 부조차라하고 찐차를 증제차라 한다.덖음차는 숭늉처럼 구수한 맛을 내고 차색은 녹황색이 되며 찻잎은 둥글게 말려져 있다. 증제차는 찻잎을 100도 정도의 수증기로 30,40초정도 쪄내기 때문에 푸른 녹색을 그 대로 지니고 있으며 찻잎의 모양은 침상형으로 되어 있다. 우리나라에서 생산되는 차는 녹차가 주종을 이룬다.
+                </p>
+            </div>
+            <div class="tab-content clearfix" id="tab2">
+                <h2>가루차</h2>
+                <img src="images/greenteapowdered.jpg" alt="powdered green tea">
+                <p>
+                    가루차는 이름 그대로 찻잎을 말려 가루로 만든 것이다. 우리나라는 고려때 단차를 만들어 마실 때는 가루로 만들어 먹었다. 가루차를 만들기 위한 차는 푸른 녹색의 차색을 유지하기 위해 차나무를 키울 때부터 차광막을 씌워 그늘을 만들어 준다. 어린 찻잎을 따서 수증기에 10 ~ 20초 정도의 짧은 시간에 찐다. 찌는 즉시 찻잎의 변색을 막기 위해 차게 냉각시킨 후 재빨리 건조 시킨다. 수분을 찻잎 에서 완전히 없앤 다음 줄기는 없애고 찻잎을 3 ~ 5mm 크기로 자른다. 이때 엽맥도 따로 분리한다. 분쇄기로 입자를 곱게 갈아 가루채 마시는 차다.
+                </p>
+            </div>
+            <div class="tab-content clearfix" id="tab3">
+                <h2>황차</h2>
+                <img src="images/yellowtea.jpg" alt="yellowtea">
+                <p>
+                    중국차의 대명사라 할 수 있는 오룡, 철관음, 청차, 쟈스민차 등은 10 ~ 70% 발효시킨 것이다. 우려진 차색은 황록색과 적황색이 된다. 차향을 돋우기 위해 마른 꽃잎을 섞은 향편 차가 있는데 그 대표적인 차가 중국 음식집에서 흔히 맛볼 수 있는 쟈스민이 이에 속한다.
+                </p>
+            </div>
+            <div class="tab-content clearfix" id="tab4">
+                <h2>발효차</h2>
+                <img src="images/redtea.jpg" alt="redtea">
+                <p>
+                    홍차는 찻잎을 85% 이상 발효시킨 것이다. 홍차는 차 소비량의 75%를 차지한다. 인도, 스리랑카, 중국, 케냐, 인도네시아가 주생산국이며 영국인들이 즐겨 마신다. 차색은 잎차의 크기에 따라 붉은 오렌지색을 띠기도 하고 흑색을 띤 홍갈색도 난다. 오렌지 색을 띠는 차를 고급차로 볼 수 있다. 몽고나 티벳같은 고산지대에서는 차에 우유를 타서 주식으로 마신다.
+                </p>
+            </div>
+            <div class="tab-content clearfix" id="tab5">
+                <h2>후발효차</h2>
+                <img src="images/blacktea.jpg" alt="blacktea">
+                <p>
+                    흑차, 보이차 등이 대표적인 이름이다. 차를 만들어 완전히 건조되기 전에 곰팡이가 번식하도록 해 곰팡이에 의해 자연히 후발효가 일어나도록 만든 차이다. 잎차로 보관하는 것보다 덩어리로 만든 고형차가 저장기간이 오래 될수록 고급차로 쳐준다. 보이차는 기름기 제거에 특별한 효과가 있고 위병이 났을때 마시면 속이 편하다. 차색은 동황색과 흑갈색을 띤다.
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

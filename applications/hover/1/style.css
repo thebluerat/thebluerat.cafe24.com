@@ -1,0 +1,80 @@
+@charset "uft-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Raleway:wght@300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+body {
+    /* font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+    font-family: 'PT Serif', serif;
+    background-color: rgb(51, 80, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+.square {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.square span {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid goldenrod;
+    border-radius: 40% 35% 50% 30% / 40% 55% 30% 50%;
+    transition: 0.5s;
+}
+.square:hover span {
+    background-color: rgb(60, 40, 40);
+    border: none;
+}
+.square span:nth-child(1) {
+    animation: circle 7s linear infinite;
+}
+.square span:nth-child(2) {
+    animation-direction: reverse;
+    animation: circle 13s linear infinite;
+}
+.square span:nth-child(3) {
+    animation: circle 10s linear infinite;
+}
+.square:hover span:nth-child(1) {
+    opacity: 0.2;
+}
+.square:hover span:nth-child(2) {
+    opacity: 0.5;
+}
+.square:hover span:nth-child(3) {
+    opacity: 0.7;
+}
+.square div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+.square div a {
+    color: #fff;
+    border: 1px solid goldenrod;
+    border-radius: 40% 62% 39% 53% / 50% 38% 51% 27%;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

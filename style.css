@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* z-index: 10; main-popup */
+
+* {
+    font-family: 'Roboto Mono', 'Gowun Dodum', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 18px;
+    margin: 0;
+    color: #222;
+    line-height: 1.5em;
+}
+/* Reset css */
+a {
+    text-decoration: none;
+    color: #222;
+}
+/* Common css */
+.inner {
+    width: 1280px;
+    margin: auto;
+    padding: 40px;
+}
+.subject {
+    color: orangered;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 30px;
+}
+/* Main: intro */
+.intro {
+    height: 100vh;
+    display: flex;
+    background-color: #fafafa;
+}
+.introduce {
+    display: flex;
+}
+.introduce > div {
+    flex: 1;
+}
+.intro-text h1 {
+    font-size: 55px;
+    line-height: 1.7em;
+    font-weight: 700;
+    margin: 40px 0;
+}
+.popup-arrow {
+    display: block;
+    margin: 20px 0;
+}
+.popup-arrow:hover i {
+    transition: 0.3s;
+    transform: rotate(-45deg);
+}
+.intro-text span {
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: 1px;
+    line-height: 1.6em;
+}
+.intro-photo {
+    position: relative;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+}
+.photo img {
+    width: 400px;
+    height: 550px;
+    object-fit: none;
+    object-position: 90% 50%;
+    border-radius: 10px;
+    transform: rotate(7deg);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border: 5px solid rgba(255, 69, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.photo-shadow {
+    width: 400px;
+    height: 550px;
+    background-color: orangered;
+    border-radius: 10px;
+    transform: rotate(-7deg);
+    position: absolute;
+    top: 35px;
+    right: 100px;
+}
+/* main-popup */
+.main-popup {
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.main-popup-back {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.main-popup-description {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 800px;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.616);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.main-popup.active, .main-popup-description.active {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-close {
+    position: absolute;
+    font-size: 45px;
+    top: 20px;
+    right: 30px;
+}
+/* Section: portfolio */
+.works {
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+.rack {
+    width: 100%;
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.list li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.list li.active a {
+    color: orangered;
+}
+.list li:last-child {
+    padding-right: 0;
+}
+.list a:hover {
+    color: orangered;
+    transition: 0.3s;
+}
+.contents {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 600px;
+    margin-top: 30px;
+}
+.content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+.content.active {
+    display: flex;
+}
+.work {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 35px;
+}
+.work a {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 250px;
+}
+.work h3 {
+    margin: auto;
+}
+.work img {
+    width: 500px;
+    height: 243px;
+}
+.desc {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 15px;
+    text-align: start;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.986);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+.desc span {
+    display: block;
+    margin-bottom: 10px;
+}
+.work a:hover .desc {
+    visibility: visible;
+    opacity: 1;
+}
+/* Section: skills */
+.skills {
+    background-color: #fafafa;
+}
+.skill {
+    padding: 100px 0;
+}
+.skill-content {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 15px 0;
+}
+.skill-content:last-child {
+    border-bottom: none;
+}
+.skill-name {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.skill-explanation {
+    flex: 5;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .inner {
+        width: 100%;
+        padding: 0 40px;
+    }
+    /* Main: intro */
+    .intro {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+    .introduce {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .intro-photo {
+        width: 100%;
+    }
+    .photo {
+        max-width: 100%;
+        min-height: 500px;
+        position: relative;
+    }
+    .photo img {
+        max-width: 100%;
+        max-height: 430px;
+        border-radius: 30px;
+        border: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        position: relative;
+        transform: rotate(0deg);
+        vertical-align: middle;
+    }
+    .photo-shadow {
+        display: none;
+    }
+    .intro-text h1 {
+        font-size: 38px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+    .intro-text span {
+        font-size: 25px;
+    }
+    /* main-popup */
+    .main-popup-description {
+        width: 90%;
+        height: 80%;
+        overflow: auto;
+    }
+    /* Section: portfolio */
+    .work {
+        width: 100%;
+    }
+    .work a {
+        width: 100%;
+    }
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+    .desc {
+        visibility: visible;
+        opacity: 1;
+        font-size: 15px;
+        padding: 2px;
+    }
+    .desc span {
+        margin-bottom: 3px;
+    }
+    /* Section: skills */
+    .skill {
+        padding: 50px 0 20px 0;
+    }
+    .skill-content {
+        flex-direction: column;
+    }
+    .skill-explanation {
+        margin-left: 0;
+    }
+}

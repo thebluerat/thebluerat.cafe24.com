@@ -1,0 +1,103 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+.clearfix::after, .clearfix::before {
+    display: block;
+    content: '';
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+.wrap {
+    width: 1000px;
+    height: 650px;
+    /* border: 1px solid orange; */
+    padding: 30px;
+}
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.ad {
+    color: crimson;
+    font-size: 23px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+header h1 {
+    font-size: 35px;
+}
+header h1 em {
+    font-style: normal;
+    position: relative;
+}
+header h1 em::after {
+    content: url(images/logo-kakao.png);
+    position: absolute;
+    top: -24px;
+    left: 55px;
+}
+.arccodion > div {
+    float: left;
+    width: 50%;
+}
+.title {
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 5px 0 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* transition-delay: 0s; */
+    margin-bottom: 15px;
+}
+.title::after {
+    font-family: "FontAwesome";
+    content: "\f054";
+    float: right;
+    margin: 4px 10px 0 0;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.title.active::after {
+    transform: rotate(90deg);
+    color: rgb(255, 123, 0);
+}
+.title:hover, .title.active {
+    background-color: rgb(39, 59, 59);
+    color: #fff;
+}
+.contents {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+.contents.active {
+    display: block;
+}
+.img {
+    text-align: right;
+    height: 380px;
+}
+.img img {
+    object-fit: scale-down;
+    height: 380px;
+    width: 500px;
+}

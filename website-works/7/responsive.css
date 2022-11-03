@@ -1,0 +1,170 @@
+@media (max-width: 768px) {
+    /* Common CSS */
+    .inner {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    /* Header */
+    .banner {
+        display: none;
+    }
+    .lnb {
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .gnb {
+        flex-direction: column;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 80px;
+        box-sizing: border-box;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.144);
+        transition: 0.3s;
+    }
+    .gnb.active {
+        right: 0;
+    }
+    .gnb li a {
+        color: #000;
+        display: block;
+        margin: 0;
+        font-size: 18px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    /* Trigger */
+    .trigger {
+        display: block;
+        width: 30px;
+        height: 17px;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+    }
+    .trigger span {
+        position: absolute;
+        height: 1px;
+        background-color: red;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .trigger span:nth-child(1) {
+        top: 0;
+    }
+    .trigger span:nth-child(2) {
+        top: 50%;
+    }
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+    .trigger.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .trigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .trigger.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    /* intro */
+    .heading h1 {
+        font-size: 40px;
+    }
+    .heading p {
+        padding: 0;
+    }
+    /* Section: about */
+    .about-content {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .about-content div {
+        padding: 10px;
+    }
+    /* Section: episode */
+    .episode-content {
+        padding: 50px 0;
+    }
+    .items {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+        border-radius: 7px;
+        margin-bottom: 25px;
+    }
+    .up-image {
+        width: 100%;
+    }
+    /* Section: review */
+    .review {
+        padding: 50px 0;
+    }
+    /* Section: callaction */
+    .callaction-heading h2 {
+        font-size: 36px;
+    }
+    /* Section: blog */
+    .blog {
+        padding: 50px 0;
+    }
+    .blog-header {
+        text-align: center;
+    }
+    .blog-header h2 {
+        font-size: 36px;
+    }
+    .blog-header p {
+        font-size: 20px;
+    }
+    .chara-content {
+        flex-direction: column;
+    }
+    .chara-item {
+        flex-direction: column;
+    }
+    .chara-image {
+        border-radius: 7px;
+        width: 100%;
+    }
+    .other-chara-items {
+        width: 100%;
+    }
+    .chara-desc {
+        padding: 0;
+    }
+    .chara-desc h3 {
+        margin-top: 15px;
+    }
+    /* Section: animation */
+    .animation {
+        padding: 15px;
+    }
+    .btns a {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-content ul {
+        margin-bottom: 25px;
+    }
+}

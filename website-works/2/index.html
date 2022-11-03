@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>쿠키런: 킹덤 소개</title>
+        <!-- fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+        <!-- favicon -->
+        <link rel = "icon" href = "./images/cookierun.webp">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Slick Slider -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel = "stylesheet" href = "./js/slick/slick-theme.css">
+        <!-- TypeIt -->
+        <script src="./js/typeit.min.js"></script>
+        <!-- Wow Scroll Reveal Animation -->
+        <script src = "./js/wow.min.js"></script>
+        <!-- Custom CSS & JS -->
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "responsive.css">
+    </head>
+    <body>
+        <div class = "container">
+            <!-- Header -->
+            <header>
+                <div class = "header-inner">
+                    <div class = "logo">
+                        <a href = "#"><img src = "./images/logo-ko.webp" alt = "로고"></a>
+                    </div>
+                    <div class = "gnb">
+                        <a href = "#feature1">게임 소개</a>
+                        <a href = "#feature2">캐릭터</a>
+                        <a href = "#feature3">세계관</a>
+                        <a href = "#feature4">자주 묻는 질문들</a>
+                        <a href = "#feature5">플레이어 리뷰</a>
+                        <a href = "#feature6">플레이 가이드</a>
+                        <a href = "#feature7">미디어</a>
+                    </div>
+                </div>
+                <div class="trigger"></div>
+            </header>
+            <!-- Section: welcome -->
+            <section class = "welcome">
+                <div class = "slideshow">
+                    <img src = "./images/dark-cacao-cookie.png">
+                    <img src = "./images/white-lily-cookie (1).png">
+                    <img src = "./images/pure-vanilla-cookie (1).png">
+                </div>
+                <div class = "welcome-heading">
+                    <span>쿠키런 킹덤</span>
+                    <h1>
+                        귀여운 쿠키들과 함께 꾸리는 왕국
+                        <em id = "typing"></em>
+                    </h1>
+                    <p>
+                        쿠키런 킹덤과 함께 다양한 컨텐츠를 즐겨보세요!
+                    </p>
+                    <div class = "welcome-btns">
+                        <a href = "#none" class = "btn start">게임 시작하기</a>
+                        <a href = "#none" class = "btn guide">플레이어 가이드</a>
+                    </div>
+                </div>
+                <div class = "mouse">
+                    <span class = "wheel"></span>
+                </div>
+            </section>
+            <!-- Section: game-introduce -->
+            <section class = "game-introduce" id = "feature1">
+                <div class="game-inner">
+                    <div class="game-content">
+                        <div class="game-left ltr wow">
+                            <img src = "./images/quotation-mark.svg">
+                            <h3>쿠키</h3>
+                            <p>
+                                매력 넘치는 왕국의 주인공, 쿠키<br>
+                                화려한 스킬, 개성있는 쿠키들과 함께<br>
+                                모험을 떠나세요.
+                            </p>
+                            <span>
+                                왕국의 주인공, 쿠키
+                            </span>
+                        </div>
+                        <div class="game-right rtl wow">
+                            <div class="game-msg">
+                                <h3>Application Downloads<big>10,000,000+</big></h3>
+                                <p>
+                                    쿠키런 킹덤은 앱 다운로드 10,000,000회 이상의 플레이어의 충분한 피드백을 통해 더욱 재밌는 컨텐츠를 제공합니다.
+                                </p>
+                            </div>
+                            <div class="game-photo">
+                                <img src = "./images/flat-logo-ko.webp" alt = "게임 로고">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="access-inner">
+                    <div class="access-content">
+                        <div class="access-left ltr wow">
+                            <h2>언제나 어디서나 즐거운 커뮤니티</h2>
+                            <p>
+                                언제나 어디서나. 즐겁고 편리하게 게임 정보를 나눠보세요!
+                                커뮤니티에 가입하여 이벤트 소식과 다양한 공략, 쿠폰 번호를 받아보세요!
+                            </p>
+                            <div class="btn-download">
+                                <a href = "#none"><img src = "./images/btn-appstore.png" alt = "앱스토어 버튼"></a>
+                                <a href = "#none"><img src = "./images/btn-playstore.png" alt = "플레이스토어 버튼"></a>
+                            </div>
+                        </div>
+                        <div class="access-right rtl wow">
+                            <img src = "./images/hqdefault (1).png" alt = "액세스 목업 이미지">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: banner -->
+            <section class = "banner">
+                <div class = "banner-inner">
+                    <div class="banner-content">
+                        <input type = "radio" name = "tabmenu" id = "tab1" checked>
+                        <input type = "radio" name = "tabmenu" id = "tab2">
+                        <input type = "radio" name = "tabmenu" id = "tab3">
+                        <div class="tab-btn">
+                            <label for="tab1">
+                                <em><img src="./images/banner-icon-01.png" alt="배너1"></em>
+                                <span>다양한 이벤트로 무과금 유저와 과금 유저 모두 즐겁게</span>
+                            </label>
+                            <label for="tab2">
+                                <em><img src="./images/banner-icon-02.png" alt="배너2"></em>
+                                <span>전략을 찾으며 유저가 만들어가는 게임</span>
+                            </label>
+                            <label for="tab3">
+                                <em><img src="./images/banner-icon-03.png" alt="배너3"></em>
+                                <span>운영자의 커뮤니티 활동 적극 관리</span>
+                            </label>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab1">
+                                <h2>Balance between players</h2>
+                                <p>
+                                    신규 캐릭터의 구 캐릭터의 능력치는 물론, 과금에 따른 플레이어 간의 균형을 고려한 운영으로 오래가는 게임을 만듭니다
+                                </p>
+                            </div>
+                            <div class="tab tab2">
+                                <h2>Game made by players</h2>
+                                <p>
+                                    플레이어가 만드는 조합에 따라 달라지는 천만 가지의 왕국과 전투 전략! 천만 가지 게임을 즐겨보세요
+                                </p>
+                            </div>
+                            <div class="tab tab3">
+                                <h2>Community management</h2>
+                                <p>
+                                    운영자가 공식 커뮤니티를 24시간 관리하여 질 좋은 게시글을 장려합니다. 다양한 이벤트로 게임과 함께 즐길 수 있는 컨텐츠 중 하나입니다
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: feature -->
+            <section class = "feature" id = "feature2">
+                <div class="feature-inner">
+                    <div class="headline-share">
+                        <h1>쿠키런 킹덤 캐릭터</h1>
+                        <p>
+                            쿠키런에 없던 다양한 신규 캐릭터
+                        </p>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-mockup ltr wow">
+                            <img src="./images/darkwitch.webp" alt="어둠마녀쿠키">
+                        </div>
+                        <div class="feature-about rtl wow">
+                            <img src="./images/icon-num-01.png" alt="">
+                            <h2>어둠마녀 쿠키</h2>
+                            <p>
+                                천 년에 한 번 온다고 하는 '마녀들의 밤'. 각지에서 모인 마녀들이 연회를 벌이던 그곳에서 어둠마녀 쿠키가 만들어졌다고 한다. 어둠의 힘을 응축시켜 만든 검고 붉은 반죽에 독을 머금은 새빨간 석류 시럽을 뿌려 아찔하게 장식해 치명적인 매력을 품고 있다. 어둠의 욕망을 담고 태어나 강력한 힘으로 연회장을 쑥대밭으로 만들고 마녀들의 비밀을 훔쳐 달아났다고 하는데… 드디어 전설의 어둠마녀 쿠키가 모습을 드러낸 것인가!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-content flex-order">
+                        <div class="feature-about ltr wow">
+                            <img src="./images/icon-num-02.png" alt="">
+                            <h2>독버섯맛 쿠키</h2>
+                            <p>
+                                아무리 먹음직스러워도, 탐스럽고 통통해도 먹어서는 안 되는 것이 있다. 어질어질 보라버섯이 바로 그것! 배가 너무도 고팠던 어느 날 독버섯을 먹어버려, 그 영향으로 멍하고 굼뜬 쿠키가 되어버린 독버섯맛 쿠키. 가만히 있으면 감쪽같이 버섯 그 자체가 되어버린다. 지나가던 쿠키들이 버섯인 줄 알고 뽑아보려고 했지만, 화를 내기는커녕 오랜 친구처럼 편하게 안겨 있었다나!? 품에서 보라색 향기가 가득한 버섯을 꺼내 주는 것은 독버섯맛 쿠키 나름의 호감 표시 방법. 하지만 어디서 온지 모를 수상한 버섯은 함부로 먹으면 큰일 날 수 있으니 주의해야 해!
+                            </p>
+                        </div>
+                        <div class="feature-mockup rtl wow">
+                            <img src="./images/mushroom.webp" alt="독버섯맛 쿠키">
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-mockup ltr wow">
+                            <img src="./images/pom.webp" alt="석류맛 쿠키">
+                        </div>
+                        <div class="feature-about rtl wow">
+                            <img src="./images/icon-num-03.png" alt="">
+                            <h2>석류맛 쿠키</h2>
+                            <p>
+                                강력한 주술의 땅에서 자란 석류 한 알을 통째로 얹어 영험한 기운이 느껴지는 쿠키. 진하게 농축된 석류 시럽으로 맛을 더해 유난히도 새빨갛다. 신비로운 석류 나무를 모시던 어느 날 어둠을 따르라는 운명을 계시받게 되는데… 혼란에 빠진 그 순간 약속한 듯 어둠의 무리가 몰아닥쳐 마을을 삼켜버렸고, 자욱한 연기만이 피어나는 그곳에 단 하나의 그림자가 우뚝 서 있었다. 그제야 석류맛 쿠키는 자신이 섬겨야 할 상대가 누구인지 알게 되었다. 어떤 계시를 보았기에, 석류맛 쿠키는 그림자를 따라나선 것일까?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: story -->
+            <section class = "story" id = "feature3">
+                <div class="story-inner">
+                    <div class="story-content">
+                        <div class="story-item-desc">
+                            <div class="story-item-headline">
+                                <h3>다섯 쿠키의 존재</h3>
+                                <hr>
+                                <p>
+                                    멀고 먼 옛날…
+                                    철과 불과 혼돈의 시대의 열기가 가라앉고
+                                    마녀들이 구워낸 달콤하고 바삭한 피조물들이
+                                    세상에 가득하니
+                                    그 중에서도 가장 빛나고 고결한 ‘소울 잼’을 지닌
+                                    다섯 쿠키들의 등장은 마치 구원과도 같았다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="story-item-photo">
+                            <img src="./images/hqdefault (2).webp">
+                        </div>
+                        <div class="story-item-desc">
+                            <div class="story-item-headline">
+                                <h3>쿠키 왕국의 부흥</h3>
+                                <hr>
+                                <p>
+                                    고귀한 지혜와 강렬한 힘에
+                                    쿠키들이 모여들고
+                                    영웅들은 왕이 되어
+                                    쿠키 문명은 대 부흥의 시대를 맞는다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="story-item-photo">
+                            <img src="./images/hqdefault (1).webp">
+                        </div>
+                        <div class="story-item-desc">
+                            <div class="story-item-headline">
+                                <h3>운명이 걸린 전쟁</h3>
+                                <hr>
+                                <p>
+                                    하지만 찬란했던 시절도 잠시
+                                    어둠을 자처하는 자의 등장으로
+                                    땅엔 어둠이 스며들고 하늘엔 악이 창궐해
+                                    온 땅에 혼돈의 그림자가 드리우기 시작하는데
+                                    이에 평화를 수호하는
+                                    다섯 쿠키들이 마침내 일어서고
+                                    해질녘의 어느 날,
+                                    드디어 쿠키들의 운명이 걸린
+                                    최후의 전쟁이 시작된다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="story-item-photo">
+                            <img src="./images/hqdefault.webp">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: faq -->
+            <section class = "faq" id = "feature4">
+                <div class="faq-inner">
+                    <div class="headline-share">
+                        <h1>쿠키런 킹덤이 궁금하신가요?</h1>
+                        <p>자주 묻는 질문과 답변</p>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-accordion ltr wow">
+                            <div class="faq-item active">
+                                <div class="faq-title">DevPlay 계정은 무엇인가요?</div>
+                                <div class="faq-desc">
+                                    DevPlay는 데브시스터즈의 글로벌 게임 서비스 플랫폼입니다.<br>
+                                    DevPlay 계정은 별도의 이메일 주소로 가입해주시거나, 이용하고 계시는 Google, Apple ID, Facebook 계정을 선택하여 DevPlay 계정으로 이용하실 수 있습니다,<br>
+                                    DevPlay 계정으로 데브 시스터즈 게임에서 진행하는 다양한 이벤트에 참여하실 수 있으며,<br>
+                                    새로운 기기로 변경해도 DevPlay 계정 로그인을 통해 가존의 게임 데이터를 유지하여 플레이할 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-title">DevPlay 계정은 무엇인가요?</div>
+                                <div class="faq-desc">
+                                    DevPlay는 데브시스터즈의 글로벌 게임 서비스 플랫폼입니다.<br>
+                                    DevPlay 계정은 별도의 이메일 주소로 가입해주시거나, 이용하고 계시는 Google, Apple ID, Facebook 계정을 선택하여 DevPlay 계정으로 이용하실 수 있습니다,<br>
+                                    DevPlay 계정으로 데브 시스터즈 게임에서 진행하는 다양한 이벤트에 참여하실 수 있으며,<br>
+                                    새로운 기기로 변경해도 DevPlay 계정 로그인을 통해 가존의 게임 데이터를 유지하여 플레이할 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-title">DevPlay 계정은 무엇인가요?</div>
+                                <div class="faq-desc">
+                                    DevPlay는 데브시스터즈의 글로벌 게임 서비스 플랫폼입니다.<br>
+                                    DevPlay 계정은 별도의 이메일 주소로 가입해주시거나, 이용하고 계시는 Google, Apple ID, Facebook 계정을 선택하여 DevPlay 계정으로 이용하실 수 있습니다,<br>
+                                    DevPlay 계정으로 데브 시스터즈 게임에서 진행하는 다양한 이벤트에 참여하실 수 있으며,<br>
+                                    새로운 기기로 변경해도 DevPlay 계정 로그인을 통해 가존의 게임 데이터를 유지하여 플레이할 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-title">DevPlay 계정은 무엇인가요?</div>
+                                <div class="faq-desc">
+                                    DevPlay는 데브시스터즈의 글로벌 게임 서비스 플랫폼입니다.<br>
+                                    DevPlay 계정은 별도의 이메일 주소로 가입해주시거나, 이용하고 계시는 Google, Apple ID, Facebook 계정을 선택하여 DevPlay 계정으로 이용하실 수 있습니다,<br>
+                                    DevPlay 계정으로 데브 시스터즈 게임에서 진행하는 다양한 이벤트에 참여하실 수 있으며,<br>
+                                    새로운 기기로 변경해도 DevPlay 계정 로그인을 통해 가존의 게임 데이터를 유지하여 플레이할 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-title">DevPlay 계정은 무엇인가요?</div>
+                                <div class="faq-desc">
+                                    DevPlay는 데브시스터즈의 글로벌 게임 서비스 플랫폼입니다.<br>
+                                    DevPlay 계정은 별도의 이메일 주소로 가입해주시거나, 이용하고 계시는 Google, Apple ID, Facebook 계정을 선택하여 DevPlay 계정으로 이용하실 수 있습니다,<br>
+                                    DevPlay 계정으로 데브 시스터즈 게임에서 진행하는 다양한 이벤트에 참여하실 수 있으며,<br>
+                                    새로운 기기로 변경해도 DevPlay 계정 로그인을 통해 가존의 게임 데이터를 유지하여 플레이할 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awards-content rtl wow">
+                            <div class="award-image">
+                                <img src="./images/faq-01.png">
+                            </div>
+                            <h2>Great game win awards</h2>
+                            <p>
+                                2021년 구글 플레이가 선정한 올해의 게임에 선정된 쿠키런 킹덤
+                            </p>
+                            <a href = "#none" class = "btn-awards">view the awards</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- Section: review -->
+            <section class = "review" id = "feature5">
+                <div class="review-inner">
+                    <div class="headline-share">
+                        <h1>플레이어들의 솔직한 리뷰</h1>
+                        <p>Cookierun:Kingdom Player's review</p>
+                    </div>
+                    <div class="review-content">
+                        <h1 class="slogan">쿠키들의 천국, 쿠키런 킹덤</h1>
+                        <div class="review-slider">
+                            <div>
+                                <p>
+                                    우선 재밌습니다. 광고 없고요. 스토리가 꽤나 재밌습니다. 왕국 꾸미기는 조금 지루하긴 하지만 다 하면 뿌듯하네요. 하지만 뽑기 확률이 좀.. 그래도 무과금도 에이션드, 슈퍼에픽, 레전더리 기본 0성에서 3성까지는 달성할수 있을겁니다. 문제 하나를 더 뽑자면 길드전이 재미없는게 문제입니다. 현상수배도 좀 바꾸거나 새로운 난이도를 추가했으면 좋겠습니다. 랙도 거의 없어요.
+                                </p>
+                                <p>
+                                    <span>김수민</span>
+                                    구글 플레이
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    생각보다 엄청 공들여서 잘만들었네요.. 쿠키들마다 하나하나 움직임이 다른데 만드는데 얼마나 고생하셨을지.. 애니메이션이나 더빙도 좋아요. 최적화 문제가 좀 아쉽지만 게임이 퀄리티가 너무 좋아서 아 이정도면 이럴수있지.. 하고 넘어갈만한 수준입니다. (뭐가 너무 많아서 이정도 렉은 별수없지 라는 생각이 드는 정도..) 아쉬운점은 글씨 크기가 너무 작거나 폰트탓에 가독성이 좀 떨어지는 점입니다. 알록달록한 버튼들이 물론 귀엽지만 친구창도 누르기 어려울정도로 버튼이 작고 x버튼도 작고 ui가 조금 불편합니다. 뭘 누르려고 했는데 어디있지 하고 한참 찾게되네요. 좋은 점은 역시 아기자기하고 귀엽다는것.. 더빙이 꽤 많이 되어있어서 놀랐어요.
+                                </p>
+                                <p>
+                                    <span>김철수</span>
+                                    구글 플레이
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    버그가 많지만 좋은게임 줄여서 버그갓겜! 이라고도 부르죠. 제가 쿠킹덤계정을 더이상 못써서 첨부터 시작했지만 하는이유가 있습니다! 일단 캐릭터들의 개성이 너무 좋아여! 지난 다크카카오 왕국애들은 동양성이라 만화(애니) 를 많이보는 입장에서 아주 좋았습니다(+석류마을 덤으로 캐릭터들 마다 스토리와 인연도 있으니 캐릭터 뿐만 아니라 스토리 보는 맛도 있겠지요! 성우분들도 다들 캐릭터에 넘 어울리는 목소리로 녹음해 주셔서 항상 감사합니다!!
+                                </p>
+                                <p>
+                                    <span>달팽이</span>
+                                    구글 플레이
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: play -->
+            <section class = "play" id = "feature6">
+                <div class="play-inner">
+                    <div class="headline-share">
+                        <h1>플레이 가이드</h1>
+                    </div>
+                    <div class="play-content">
+                        <div class="play-item utd wow">
+                            <img src="./images/play-icon-01.png">
+                            <h3>유튜브 공략 컨텐츠 제공</h3>
+                            <i class = "xi-checkbox-blank"></i>
+                            <p>
+                                혼자서는 달성하기 어려운 컨텐츠가 있다고요? 데브시스터즈에서 공략 영상을 제공합니다.
+                            </p>
+                        </div>
+                        <div class="play-item utd wow" data-wow-delay = "0.25s">
+                            <img src="./images/play-icon-02.png">
+                            <h3>컨텐츠 집중 공략</h3>
+                            <i class = "xi-checkbox-blank"></i>
+                            <p>
+                                왕국 꾸미기, 전투, 쿠키 스킨 모으기, 쿠키 성장시키기 등 재밌는 컨텐츠를 골라 최고가 되어보세요.
+                            </p>
+                        </div>
+                        <div class="play-item utd wow" data-wow-delay = "0.5s">
+                            <img src="./images/play-icon-03.png">
+                            <h3>뉴비를 위한 길드</h3>
+                            <i class = "xi-checkbox-blank"></i>
+                            <p>
+                                길드 시스템을 도입하여 함께 어둠마녀맛 쿠키를 물리치고 경쟁하며 게임을 즐겨보세요.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: guide -->
+            <section class = "guide">
+                <div class="guide-inner">
+                    <div class="guide-content">
+                        <div class="guide-slider ltr wow">
+                            <div class="slider-mockup">
+                                <img class="round-mockup" src="./images/slder-mockup.png">
+                                <div class="mockup-slider">
+                                    <img src="./images/app-screen-01.png">
+                                    <img src="./images/app-screen-02.png">
+                                    <img src="./images/app-screen-03.png">
+                                    <img src="./images/app-screen-04.png">
+                                    <img src="./images/app-screen-05.png">
+                                    <img src="./images/app-screen-06.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide-video rtl wow">
+                            <h1>
+                                길드에 가입하여 <br>
+                                친구와 함께 플레이해보세요 <br>
+                                <span>쿠키런 킹덤</span>
+                            </h1>
+                            <h2 class="video-headline">
+                                <img src="./images/icon-youtube.png">쿠키런 킹덤 플레이 영상
+                            </h2>
+                            <div class="video-frame">
+                                <img src="./images/cookierun.webp">
+                                <i class = "fa fa-play-circle open-modal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: news -->
+            <section class = "news" id = "feature7">
+                <div class="news-inner">
+                    <div class="headline-share">
+                        <h1>쿠키런 킹덤 최신 소식</h1>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-left ltr wow">
+                            <div class="news-big" onclick="location.href='#none'">
+                                <img src="./images/oyster.webp">
+                                <div class="news-headline">
+                                    <h2>Update 2020. 6. 13</h2>
+                                    <p>
+                                        푸른 하늘 아래 펼쳐진 아름다운 🌊크렘 공화국!<br>
+                                        눈부신 도시 아래, 서서히 고개를 드는 야망..?!<br><br>
+                                        6월 14일, 쿠키 오디세이 제 Ⅱ장📜 '영광의 빛, 크렘 공화국'과
+                                        오이스터 가문의 가주, 오이스터맛 쿠키🦪가 찾아옵니다!
+
+                                        <small class="date">2022. 6. 13</small>
+                                    </p>
+                                    <a href="#none" class = "btn-view">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-right rtl wow">
+                            <div class="news-items">
+                                <div class="news-thum" onclick="location.href='#none'">
+                                    <div class="news-photo">
+                                        <img src="./images/crun.png">
+                                        <span class="badge new">new issue</span>
+                                    </div>
+                                    <p>
+                                        당당한 기동대장🐺 크런치초코칩 쿠키
+                                        <small class="date">Dec 11, 2021</small>
+                                    </p>
+                                </div>
+                                <div class="news-thum" onclick="location.href='#none'">
+                                    <div class="news-photo">
+                                        <img src="./images/cherry.png">
+                                        <span class="badge hot">hot issue</span>
+                                    </div>
+                                    <p>
+                                        피크닉 좋아해?🌸 벚꽃맛 쿠키💕
+                                        <small class="date">Mar 21, 2022</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news-items">
+                                <div class="news-thum" onclick="location.href='#none'">
+                                    <div class="news-photo">
+                                        <img src="./images/gameContents-ko-01.webp">
+                                        <span class="badge new">new issue</span>
+                                    </div>
+                                    <p>
+                                        쿠키들의 우당탕탕💫 변신 대소동💥
+                                        <small class="date">Apr 12, 2022</small>
+                                    </p>
+                                </div>
+                                <div class="news-thum" onclick="location.href='#none'">
+                                    <div class="news-photo">
+                                        <img src="./images/brown.webp">
+                                        <span class="badge hot">hot issue</span>
+                                    </div>
+                                    <p>
+                                        굳건한 충심 경비대장, 흑당맛 쿠키🏹
+                                        <small class="date">May 16, 2022</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#none" class="btn-readmore">read more news</a>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer>
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="./images/flat-logo-ko.webp">
+                        </div>
+                        <div class="copyright">
+                            <div class="policy-sns">
+                                <div class="policy">
+                                    <span>
+                                        <a href="#none">개인정보취급방침</a> <em>|</em>
+                                        <a href="#none">이용약관</a>
+                                    </span>
+                                    <span>
+                                        Copyright THANK YOU. All right reserved.
+                                    </span>
+                                </div>
+                                <div class="sns">
+                                    <a href="#none"><i class = "xi-facebook"></i></a>
+                                    <a href="#none"><i class = "xi-instagram"></i></a>
+                                    <a href="#none"><i class = "xi-kakaostory"></i></a>
+                                    <a href="#none"><i class = "xi-naver"></i></a>
+                                    <a href="#none"><i class = "xi-youtube-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <span>
+                                    (주)데브데브시스 | 대표자 : 김김김 | 사업자번호 : 123-5-67890 사업자 정보 확인 | 개인정보보호책임자 : 김김김
+                                </span>
+                                <span>
+                                    주소 : 서울시 서대문구 불광동 123-14 데브데브 2층 ㅣ 이메일: email@soue.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Go to top -->
+        <a class = "btn-top" href="#"><i class = "xi-angle-up-thin
+            
+            "></i></a>
+        <!-- Video Modal -->
+        <div class="video-modal">
+            <i class = "xi-close-thin close-modal"></i>
+            <div class="video-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KPztqYEvS20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>

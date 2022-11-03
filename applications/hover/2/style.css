@@ -1,0 +1,64 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Song+Myung&display=swap');
+
+body {
+    font-family: 'PT Serif', serif;
+    font-family: 'Song Myung', serif;
+    color: #222;
+    line-height: 1.5em;
+    margin: 0;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+.fishes {
+    /* border: 1px solid #000; */
+    text-align: center;
+    display: block;
+}
+.fish {
+    display: inline-block;
+    /* 가로 배치 */
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 10px;
+}
+.fish img {
+    height: 300px;
+    width: inherit;
+}
+.caption {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.733);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    /* transition 주기 위해 display: none;으로 하지 않았다 */
+    transition: 0.5s;
+}
+.caption a {
+    color: #fff;
+    background-color: teal;
+    padding: 8px;
+    border-radius: 80px 50px 30px 40px / 40px 30px 60px 40px;
+}
+.caption a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+.fish:hover .caption {
+    opacity: 1;
+}
