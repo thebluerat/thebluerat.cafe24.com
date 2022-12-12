@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>김수민 포트폴리오</title>
+</head>
+<body>
+    <div class="container">
+        <main class="intro">
+            <div class="inner">
+                <div class="introduce">
+                    <div class="intro-text">
+                        <div class="subject">김수민</div>
+                        <h1>WEBPUBLISHER PORTFOLIO</h1>
+                        <a class="popup-arrow" data-alt="popup1" href="#none">자기 소개 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="popup-arrow"  data-alt="popup2" href="#none">교육 경력 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="popup-arrow"  data-alt="popup3" href="#none">자격증 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        <span>
+                            공부하며 성장하는</br>
+                            웹퍼블리셔 포트폴리오
+                        </span>
+                    </div>
+                    <div class="intro-photo">
+                        <div class="photo">
+                            <img src="./images/me.jpg" alt="김수민 사진">
+                        </div>
+                        <div class="photo-shadow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-popup">
+                <div class="main-popup-back"></div>
+                <div class="main-popup-description" id="popup1">
+                    <a class="popup-close" href="#none"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                    <p>
+                        모든 사용자는  UI를 통해 정보에 접근합니다. 정보를 접하는 가장 첫번째 지침이 바로 웹 퍼블리셔가 만드는 화면이라고 생각합니다. 그리고 그 점에서 UI는 언어와 같다고 생각합니다. 저는 국어국문학과를 졸업했습니다. 정보에 접근하는 도구가 되어, 논리를 구축하고, 생각의 방향을 잡아주는 언어처럼 누구에게나 모든 정보로의 문을 열어주는 웹 퍼블리셔가 되고 싶습니다.
+                    </p>
+                </div>
+                <div class="main-popup-description" id="popup2">
+                    <a class="popup-close" href="#none"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                    <p>
+                        빅데이터 플랫폼 개발자 양성과정 수료</br></br>
+    
+                        - Web Front-End (UI): Html, CSS, Javascript, JQuery, JSP
+                        - Database: MariaDB
+                        - Web Back-end: JAVA, Spring Framework, MyBatis
+                        - Hadoop, Jenkins</br></br>
+    
+                        [프로젝트]</br>
+                        제목: ERP 구축</br>
+                        기간: 2019. 8. 2주</br>
+                        인원: 12명</br>
+                        개발 내용:</br>
+                        - 무역 ERP를 구축</br>
+                        - 권한 설정, 수출입, 재고, 발주, 단가, 선입출고, 세금계산서 통합 정보 시스템 구축</br>
+                        담당 업무: 사이트 가입, 로그인아웃, 회원 정보 저장, 권한 부여 기능 구현, DB 모델링 구축, UI 구현</br>
+                        개발 환경 및 라이브러리:</br>
+                        - 구현 언어: HTML, CSS3, JavaScript, jQuery 3.5.1, SQL</br>
+                        - 사용 기술: Ajax, WebSocket, Servlet/JSP</br>
+                        - WAS: Tomcat 8.5</br>
+                        - DB 서버: Oracle Expression DataBase</br>
+                        - Framework: MyBatis 3.4.6</br>
+                        - 사용 도구: Eclipse, HeidiSQL</br>
+                    </p>
+                </div>
+                <div class="main-popup-description" id="popup3">
+                    <a class="popup-close" href="#none"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                    <p>
+                        2021.06		정보처리기사</br>
+                        2020.07		웹디자인기능사</br>
+                        2018.09		어도비 포토샵(Adobe Photoshop)</br>
+                        2017.02		컴퓨터활용능력2급</br>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <section class="portfolio">
+            <div class="inner">
+                <div class="works">
+                    <div class="subject">Portfolio</div>
+                    <div class="rack">
+                        <ul class="list">
+                            <li class="active" data-alt="content1"><a href="#none">WEBSITES</a></li>
+                            <li data-alt="content2"><a href="#none">APPLICATIONS</a></li>
+                        </ul>
+                        <div class="contents">
+                            <div class="content active" id="content1">
+                                <div class="work">
+                                    <a href="./website-works/3/index.html" data-featherlight="iframe">
+                                        <img src="./images/responsive-transform.png">
+                                        <div class="desc">
+                                            <span>
+                                                스크롤하면 header transform하는 제품 소개 페이지입니다. 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                                제작 방식: HTML + CSS + JQuery<br>
+                                                참여도: 100%<br>
+                                                참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>반응형 헤더 변환 아티클</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./website-works/7/index.html" data-featherlight="iframe">
+                                        <img src="./images/responsive-flex.png">
+                                        <div class="desc">
+                                            <span>
+                                                flex를 이용한 만화 소개 페이지입니다. 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                                제작 방식: HTML + CSS + JQuery<br>
+                                                참여도: 100%<br>
+                                                참고 사항: slick slider 이용. 이외의 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>Flex 반응형 웹사이트</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./website-works/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/eunpyeong-lib-homepage.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                은평구립도서관 홈페이지를 만들어보고 있습니다. 카카오 api를 이용해서 지도를 볼 수 있게 하였습니다. jquery로 메뉴 넘김을 구현했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                        </div>
+                                    </a>
+                                    <h3>은평구립도서관</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./website-works/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/cookie-page.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                게임 '쿠키런 킹덤'을 소개하는 페이지입니다. 모바일 반응형으로 제작했습니다. jquery로 여러 가지 애니메이션 효과를 주었습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 제이쿼리 플러그인 사용 외 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>responsive</br>쿠키런 킹덤 소개</h3>
+                                </div>
+                            </div>
+                            <div class="content" id="content2">
+                                <div class="work">
+                                    <a href="./applications/prototype/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/login-form.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                로그인 방식을 선택하는 로그인 폼입니다. 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>로그인 폼</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/flex/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/flex-login-form.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                또 다른 로그인 폼입니다. flex를 이용하여 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>Flex 반응형 로그인 폼</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/flex/4/index.html" data-featherlight="iframe">
+                                        <img src="./images/flex-image-gallery.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                검색 창이 있는 이미지 갤러리입니다. hover 시 설명을 볼 수 있습니다. flex를 이용하여 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>Flex 반응형 이미지 갤러리</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/flex/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/responsive-flex-card.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                flex를 이용하여 모바일 화면에서 세로로 전환되는 제품 설명 카드 폼을 만들어보았습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>Flex 반응형 카드</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/accordion/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/accordion1.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                어코디언 메뉴를 클릭하면 이미지가 함께 바뀌는 제품 소개 폼을 만들어보았습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>accordion 1</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/accordion/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/accordion-mobile.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                jquery를 이용한 모바일 화면에서의 어코디언 메뉴입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>accordion-mobile</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/hover/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/hover-doubleborder.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                더블 보더를 이용하여 시간 차로 애니메이션을 준 제품 소개 폼입니다. hover 효과가 있습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>hover - 더블 보더 애니메이션</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/hover/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/hover-desc.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                hover 시 상세 설명을 볼 수 있는 폼입니다. 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>hover - 상세 설명</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/intro-animation/index.html" data-featherlight="iframe">
+                                        <img src="./images/intro-animation.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                가상클래스를 이용한 인트로 애니메이션입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>가상클래스 애니메이션</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/loading-animation/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/loading-square.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                사각형 로딩 애니메이션입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>로딩 애니메이션 - 사각형</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/loading-animation/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/loading-heart.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                수평으로 이동하는 로딩 애니메이션입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>로딩 애니메이션 - 수평 이동</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/loading-animation/3/index.html" data-featherlight="iframe">
+                                        <img src="./images/loading-circle.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                회전하는 원을 이용한 로딩 애니메이션입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>로딩 애니메이션 - 원</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/flex/3/index.html" data-featherlight="iframe">
+                                        <img src="./images/responsive-flex-header.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                flex를 이용해 헤더 내비게이션을 모바일 반응형으로 제작했습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>Flex 반응형 헤더 내비게이션</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/navigation/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/navi-hover.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                hover한 메뉴 외 흐려지는 효과를 준 내비게이션입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>흐려지는 내비게이션</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/navigation/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/navi-fullscreen.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                전체 화면이 전환되는 내비게이션입니다. 세계에서 가장 아름다운 책을 주제로 모바일 반응형으로 만들어보았습니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>풀 스크린 내비게이션</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/study/1/moveMushroom.html" data-featherlight="iframe">
+                                        <img src="./images/study-movemushroom.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                방향키로 목적지에 도달하는 간단한 게임입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>장애물 피하기 게임</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/study/2/json_study.html" data-featherlight="iframe">
+                                        <img src="./images/study-add-user.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                사용자를 추가하는 화면입니다.
+                                            </span>
+                                            제작 방식: HTML + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>사용자 추가</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/tab/1/index.html" data-featherlight="iframe">
+                                        <img src="./images/tab1.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                클릭 시 이미지 효과와 텍스트가 바뀌는 탭 메뉴입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>tab</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/tab/2/index.html" data-featherlight="iframe">
+                                        <img src="./images/tab2.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                클릭하면 연결된 메뉴로 전환되는 탭 메뉴입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>tab 2</h3>
+                                </div>
+                                <div class="work">
+                                    <a href="./applications/tab/3/index.html" data-featherlight="iframe">
+                                        <img src="./images/tab3.png" alt="">
+                                        <div class="desc">
+                                            <span>
+                                                세로로 스크롤하며 전환되는 탭 메뉴입니다.
+                                            </span>
+                                            제작 방식: HTML + CSS + JQuery<br>
+                                            참고 사항: 모든 퍼블리싱 작업 하드코딩
+                                        </div>
+                                    </a>
+                                    <h3>tab 3</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="inner">
+                <div class="skill">
+                    <div class="subject">Skill</div>
+                    <div class="rack">
+                        <div class="skill-content">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-explanation">
+                                <P>
+                                    웹 표준과 웹 접근성을 준수하는 HTML 정보 구조 설계로 퍼블리싱을 합니다. 구조와 구성을 중시하는 HTML5의 마크업 방식과 시맨틱 태그를 사용해 레이아웃을 설계합니다. 퍼블리싱하기 전, 클래스 네임과 HTML 정보 구조를 설계한 후 퍼블리싱 작업을 진행합니다. 폰트 서식, 컬러, 사이즈, 반응형, 상호 작용, HTML 와이어프레임을 미리 그리고 메모한 후 체계적으로 수행합니다.
+                                </P>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-explanation">
+                                <p>
+                                    CSS는 태그의 용도와 의미를 정확하게 파악하고 사용하도록 하고 있습니다. inline 요소인 a 태그에 적용이 안 되는 상하 margin을 굳이 부여하지 않고 span 태그는 텍스트에만, button 태그는 버튼에만 사용하는 등 정확하고 효율적으로 사용합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-name">Javascript</div>
+                            <div class="skill-explanation">
+                                <p>
+                                    내비게이션, 탭 메뉴, 어코디언 등 웹 퍼블리싱에 필수적이라고 할 수 있는 상호 작용을 위한 작업은 플러그인을 사용하지 않고 제이쿼리 하드코딩으로 제작합니다. 필수적인 자바스크립트를 활용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-name">Responsive Web</div>
+                            <div class="skill-explanation">
+                                <P>
+                                    float, position, media query를 활용한 반응형 웹 제작을 할 수 있습니다. flex와 grid 방식으로도 반응형 웹 사이트를 제작할 수 있습니다.
+                                </P>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-name">Mobile Web App</div>
+                            <div class="skill-explanation">
+                                <P>
+                                    모바일 환경을 우선으로 생각하는 모바일 웹 앱을 만들 수 있습니다. 사용자 경험에 도움을 주기 위한 효율적인 컨텐츠 배치를 우선으로 생각합니다. 모바일 대응을 위한 플랫폼으로 반응형 웹, 모바일 웹, 모바일 웹 앱, 네이티브 앱에 대해 이해하고 있습니다. 사용자에게 최적화하는 방법을 배우기 위해 디자인 아티클을 구독하여, '터치 스크린에 알맞은 탭 타겟의 최소 크기, 터치 프렌들리 디자인, 특정 상호작용을 위해 사용자가 스마트폰을 잡는 방식' 등 일상적으로 관심을 가지고 배우고 있습니다.
+                                </P>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-name">Text Editor</div>
+                            <div class="skill-explanation">
+                                <P>
+                                    텍스트 에디터는 Visual Studio Code를 주로 사용합니다. Brackets와 Atom으로 퍼블리싱 공부를 시작하여 익숙하고, Java Spring을 공부할 때는 IDE Eclipse를 주로 사용했습니다.Sublime Text와 EditPlus 사용 경험이 있습니다.
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

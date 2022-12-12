@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: paleturquoise;
+}
+section {
+    /* border: 1px solid green; */
+    width: 300px;
+    min-height: 500px;
+    height: 530px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #eee;
+    box-shadow: 30px 3px 10px rgba(0, 0, 0, 0.5);
+}
+section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.title {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.title::after {
+    font-family: "FontAwesome";
+    content: '\f107';
+    color: yellowgreen;
+    background-color: black;
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.3em;
+    transition: 0.3s;
+}
+.title.active::after {
+    transform: rotate(180deg);
+    background-color: rgb(255, 194, 222);
+    color: #000;
+}
+.content {
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    display: none;
+}
+.content span {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.content span:last-child {
+    border-bottom: none;
+}
+.content em {
+    float: right;
+    font-style: normal;
+    color: #fff;
+    background-color: palevioletred;
+    padding: 0 10px;
+    border-radius: 3px;
+}

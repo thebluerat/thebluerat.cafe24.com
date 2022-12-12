@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- Slick.js -->
+    <script src="./js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <title>Flex Responsive Web Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner">
+                <div class="lnb">
+                    <a href="#none"><em>for</em> animation</a>
+                    <a href="#none"><em>for</em> comicbook</a>
+                    <a href="#none"><em>for</em> others</a>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <a href="#none"><img src="./images/logo.webp"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#episode">EPISODE</a></li>
+                    <li><a href="#review">REVIEW</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                </ul>
+            </nav>
+            <div class="trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <main class="intro">
+            <div class="inner">
+                <div class="heading">
+                    <h1>모브 사이코 100</h1>
+                    <p>재미있는 만화 추천</p>
+                </div>
+            </div>
+        </main>
+        <section class="about" id="about">
+            <div class="inner">
+                <div class="about-content">
+                    <div class="desc">
+                        <h2>모브 사이코 100에 대해</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis provident iure adipisci, incidunt pariatur deserunt eos minus quis quas harum molestias aliquam placeat aliquid inventore rerum alias earum doloribus modi!<br><br>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita doloremque provident, incidunt sequi, qui distinctio impedit molestiae quam consequuntur molestias id mollitia, corrupti odio soluta ratione rem autem. Possimus, repellat.
+                        </p>
+                        <a href="#none">Visit and Watch the Animation!</a>
+                    </div>
+                    <div class="photo">
+                        <img src="./images/about-img.png" alt="캐릭터 얼굴">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="episode" id="episode">
+            <div class="inner">
+                <div class="episode-content">
+                    <h2>재미있는 에피소드 추천</h2>
+                    <div class="items">
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="./images/episode-01.png" alt="best episode">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge must">Must Watch</span>
+                                <h3>에피소드 6 -부조화, 얻기 위해서-</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint repudiandae! Ipsa totam quam voluptatibus exercitationem laborum fugit voluptates nemo, officia placeat quod maiores in. Optio numquam expedita fugit repellat.
+                                </p>
+                                <a class="btn-explore" href="#none">Explore <img src="./images/icon-arrow.png"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="./images/episode-02.jpg" alt="best episode">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge good">Good to Watch</span>
+                                <h3>에피소드 9 -손톱, 제 7지부-</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam veritatis doloremque optio cupiditate corporis repellat in non. Recusandae iure vel beatae natus, omnis laborum ut. Quae esse saepe quo.
+                                </p>
+                                <a class="btn-explore" href="#none">Explore <img src="./images/icon-arrow.png"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="up-image">
+                                <img src="./images/episode-03.jpg" alt="best episode">
+                            </div>
+                            <div class="down-desc">
+                                <span class="badge good">Good to watch</span>
+                                <h3>에피소드 11 -스승 ~leader~</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem natus et praesentium aperiam repellendus minus maiores neque hic accusantium nesciunt laboriosam laudantium sed!
+                                </p>
+                                <a class="btn-explore" href="#none">Explore <img src="./images/icon-arrow.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review" id="review">
+            <div class="inner">
+                <div class="review-content">
+                    <h2>만화 <b>독자들이 직접 쓴</b> 만화 리뷰</h2>
+                    <hr>
+                    <div class="review-slider">
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-01.jpg">
+                                <span><b>김수민</b>Seoul, Korea</span>
+                            </p>
+                            <p class="comment">
+                                주인공의 마지막 갈등 대상은 가장 강한 자기 자신이었다. 동시에 그저 사춘기 중학생일 뿐이었다. 그걸 알아주는 레이겐만이 힘으로 말리지 않고 자신의 치부를 모브와 공유하면서 모브를 진정시킨다. 과연 스승인 이유가 있었다. 받아들일 수 없을 것 같은 자기 자신도 받아들이게 해주었다.<br>
+                                오늘만 해도 ‘음악적 재능이 있었으면 좋겠다’는 생각을 하고 있었다. 그러나 재능이 개성일 뿐이며 성숙은 노력으로 이루어내는 것이라는 모브의 행동이 오늘 어설프게 기타 연습을 했던 내 마음을 유쾌하게 만들어준다
+                            </p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-04.jpg">
+                                <span><b>Kate Whitney</b>Los Angeles, US</span>
+                            </p>
+                            <p class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto sunt aperiam sint consequatur, tempora, recusandae quod labore omnis, maxime asperiores impedit dicta. Dolor minus incidunt eligendi eaque assumenda neque repellat temporibus magnam veniam vitae, quisquam debitis possimus corporis distinctio maiores nesciunt itaque aliquam culpa placeat. Exercitationem aperiam est aut atque temporibus quaerat doloremque
+                            </p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-03.jpg">
+                                <span><b>Kelly Muvils</b>New York, US</span>
+                            </p>
+                            <p class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto sunt aperiam sint consequatur, tempora, recusandae quod labore omnis, maxime asperiores impedit dicta. Dolor minus incidunt eligendi eaque assumenda neque repellat temporibus magnam veniam vitae, quisquam debitis possimus corporis distinctio maiores nesciunt itaque aliquam culpa placeat. Exercitationem aperiam est aut atque temporibus quaerat doloremque
+                            </p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-02.jpg">
+                                <span><b>Oliver</b>Califonia, US</span>
+                            </p>
+                            <p class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto sunt aperiam sint consequatur, tempora, recusandae quod labore omnis, maxime asperiores impedit dicta. Dolor minus incidunt eligendi eaque assumenda neque repellat temporibus magnam veniam vitae, quisquam debitis possimus corporis distinctio maiores nesciunt itaque aliquam culpa placeat. Exercitationem aperiam est aut atque temporibus quaerat doloremque
+                            </p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-05.jpg">
+                                <span><b>Sophia</b>London, UK</span>
+                            </p>
+                            <p class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto sunt aperiam sint consequatur, tempora, recusandae quod labore omnis, maxime asperiores impedit dicta. Dolor minus incidunt eligendi eaque assumenda neque repellat temporibus magnam veniam vitae, quisquam debitis possimus corporis distinctio maiores nesciunt itaque aliquam culpa placeat. Exercitationem aperiam est aut atque temporibus quaerat doloremque
+                            </p>
+                        </div>
+                        <div>
+                            <p class="client">
+                                <img src="./images/client-06.jpg">
+                                <span><b>Charlotte</b>Washington, US</span>
+                            </p>
+                            <p class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto sunt aperiam sint consequatur, tempora, recusandae quod labore omnis, maxime asperiores impedit dicta. Dolor minus incidunt eligendi eaque assumenda neque repellat temporibus magnam veniam vitae, quisquam debitis possimus corporis distinctio maiores nesciunt itaque aliquam culpa placeat. Exercitationem aperiam est aut atque temporibus quaerat doloremque
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="callaction">
+            <div class="callaction-heading">
+                <h2>가장 평범하고 <b>가장 강력한 주인공이</b><br><b>가장 못하는 것</b>을 위해 노력하는 만화</h2>
+                <a href="#none">바로 보러 가기</a>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="inner">
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h6>Soomins' Review</h6>
+                        <h2>강하기만 한 주인공이 나오는 흔한 만화 아닌가요?</h2>
+                        <p>
+                            이 만화의 주인공 모브가 열중하는 것은 무엇인가? 바로 그가 타고난 영적인 영역의 대척점에 있는 육체적 영역의 것이다. 그는 남들보다 허약한 몸뚱어리를 가지고 꼬박꼬박 달리기 활동에 참여한다. 몸을 단련함으로써 사랑을 얻고자 하고, 부원들과의 우정을 다지고자 하고, 마라톤 기록을 성취하고자 한다. 초능력으로는 얻을 수 없는 과정을 밟는 즐거움을 육체 개조 활동을 통해 느끼고 있는 것이다.<br>
+                            능력주의 사회에서 신분 상승의 도구로 지나치게 추앙되는 재능은 이 만화에서 개성으로 승화했다. 이 만화의 주제는 그것이다. 정신적 성숙은 재능에 기대어 이루어낼 수 없으며 육체로 대변되는 성실함으로 가꾸어나가야 하는 것이다.
+                        </p>
+                        <a class="btn-explore" href="#none">Read More <img src="./images/icon-arrow.png"></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="chara-content">
+                        <div class="main-chara-items">
+                            <h6>주요 등장인물 보기</h6>
+                            <div class="chara-item">
+                                <div class="chara-image">
+                                    <img src="./images/cute-mob.webp" alt="cute mob">
+                                </div>
+                                <div class="chara-desc">
+                                    <h3>모브의 귀여운 모습</h3>
+                                    <p>
+                                        아직 중학생밖에 되지 않은 모브의 순박하고 귀여운 모습이다. 이 만화의 주인공이다.
+                                        <span>귀여운 모브, 애니메이션</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="chara-item">
+                                <div class="chara-image">
+                                    <img src="./images/reigen.jpg" alt="reigen">
+                                </div>
+                                <div class="chara-desc">
+                                    <h3>레이겐</h3>
+                                    <p>
+                                        모브의 스승 레이겐의 평소 모습이다. 현실적이고 늘 쉽게 상황을 타파한다.
+                                        <span>레이겐, 애니메이션</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="chara-item">
+                                <div class="chara-image">
+                                    <img src="./images/musashi.jpg" alt="goda musashi">
+                                </div>
+                                <div class="chara-desc">
+                                    <h3>무사시</h3>
+                                    <p>
+                                        육체 개조부의 부장 고다 무사시이다. 특별한 초능력 없이 운동으로 기른 힘으로 어떻게든 부원들을 포함한 주인공을 도우려고 한다.
+                                        <span>무사시, 애니메이션</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-chara-items">
+                            <h6>그밖의 인물</h6>
+                            <div class="chara-item">
+                                <div class="chara-image">
+                                    <img src="./images/ritsu.webp" alt="ritsu">
+                                </div>
+                                <div class="chara-desc">
+                                    <h3>리츠</h3>
+                                    <p>
+                                        주인공의 동생. 형을 무서워하기도, 질투하기도, 동경하기도, 아끼기도 하는 복잡한 인물이다.
+                                        <span>리츠, 애니메이션</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="chara-item">
+                                <div class="chara-image">
+                                    <img src="./images/ekubo.jpg" alt="ekubo">
+                                </div>
+                                <div class="chara-desc">
+                                    <h3>에쿠보</h3>
+                                    <p>
+                                        신이 되고자 했던 악령이다. 강한 주인공에게 빌붙어 신이 될 기회를 노렸지만, 점점 주인공에게 감화된다.
+                                        <span>에쿠보, 애니메이션</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="animation">
+            <div class="animation-heading">
+                <h3><span>SEE ALL ABOUT ANIMATION</span> for traveling our site</h3>
+                <div class="btns">
+                    <a href="#none">Watch Animation</a>
+                    <a href="#none">Read Comicbook</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="footer-content">
+                    <ul class="community">
+                        <li>Community</li>
+                        <li><a href="#none">Subscribe</a></li>
+                        <li><a href="#none">Give A Gift</a></li>
+                        <li><a href="#none">Reader Service FAQ</a></li>
+                        <li><a href="#none">Access Your Subscription</a></li>
+                    </ul>
+                    <ul class="network">
+                        <li>Network</li>
+                        <li><a href="#none">Privacy Policy</a></li>
+                        <li><a href="#none">Terms Of Service</a></li>
+                        <li><a href="#none">Advertise</a></li>
+                        <li><a href="#none">Jobs</a></li>
+                    </ul>
+                    <ul class="help">
+                        <li>Help Preserve This Anime</li>
+                        <li>We may earn a commission if you purchase an item featured on our site.</li>
+                        <li>Copyright ©  2022. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a class="gototop" href="#"><i class="fa fa-angle-up"></i></a>
+    <script src="./js/custom.js"></script>
+</body>
+</html>

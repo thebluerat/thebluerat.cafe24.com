@@ -1,0 +1,70 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.loading {
+    width: 123px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.dots {
+    text-align: center;
+}
+.dots span {
+    color: gainsboro;
+    animation: dots 1s linear infinite;
+    display: inlnine-block;
+    font-size: 15px;
+    margin: 2px;
+}
+.dots span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.dots span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.dots span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.dots span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.dots span:nth-child(5) {
+    animation-delay: 1s;
+}
+.run {
+    color: rgb(255, 6, 130);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    animation: heart 1s linear infinite;
+}
+
+@keyframes dots {
+    0% {
+        opacity: 0.5;
+        color: hotpink;
+    }
+    30% {
+        opacity: 1;
+        font-size: 18px;
+    }
+    60% {
+        font-size: 13px;
+    }
+    100% {
+        font-size: 15px;
+    }
+}
+@keyframes heart {
+    0% {
+        left: -20px;
+    }
+    50% {
+    }
+    100% {
+        left: 100%;
+    }
+}

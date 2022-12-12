@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <style>
+            #userList li {cursor: pointer;}
+            #userList li:hover {background-color: yellow;}
+            .dn {display: none;}
+        </style>
+        
+        <script>
+            $(document).ready(function(){
+               function cssEvent(target, style){
+                   $(target).css(style);
+               }
+                
+               var userList = [];
+               var tagList = ["#usr","#pwd"];
+               var styleList = [
+                       {"borderColor":"red"},
+                       {"borderColor":"rgb(204, 204, 204)"}
+                   ];
+               var uIndex = -1;
+                
+               function selectUser(){
+                   var html = "";
+                   
+                   if(localStorage.getItem("users") == null){
+                       html = '<li class="list-group-item">사용자가 없습니다.</li>';                       
+                   } else {
+                       userList = JSON.parse(localStorage.getItem("users"));
+                       for(var i = 0; i < userList.length; i++){
+                           html += '<li class="list-group-item">' + userList[i]["#usr"] + '</li>';
+                       }
+                   }
+                   
+                   $("#userList").empty().append(html);
+                   
+                   $("#userList li").click(function(){
+                       $("#add").addClass("dn");       // class 추가
+                       $("#update").removeClass("dn"); // class 삭제
+                       
+                       var index = $("#userList li").index(this);
+                       uIndex = index;
+                       for(var i = 0; i < tagList.length; i++){
+                           $(tagList[i]).val(userList[index][tagList[i]]);
+                       }
+                   });
+               }
+                
+               selectUser();
+                
+               $("form").submit(function(e){
+                   e.preventDefault();
+                   
+                   var user = {};
+                   for(var i = 0; i < tagList.length; i++){
+                       if($(tagList[i]).val() == ""){
+                           alert(tagList[i] + " 없음!");
+                           cssEvent(tagList[i], styleList[0]);
+                           return;
+                       } else {
+                           cssEvent(tagList[i], styleList[1]);
+                           user[tagList[i]] = $(tagList[i]).val();
+                           $(tagList[i]).val(""); // 값 초기화
+                       }
+                   }
+                   
+                   console.log("2", user, user["#usr"]);
+                   
+                   /*
+                   if($("#usr").val() == ""){
+                       alert("이름이 없음!");
+                       cssEvent("#usr", styleList[0]);
+                       return;
+                   } else {
+                       cssEvent("#usr", styleList[1]);
+                   }
+                   
+                   if($("#pwd").val() == ""){
+                       alert("비밀번호가 없음!");
+                       cssEvent("#pwd", styleList[0]);
+                       return;
+                   } else {
+                       cssEvent("#pwd", styleList[1]);
+                   }
+                   */
+                   
+                   /*
+                   localStorage.setItem("key", "value"); // 입력(저장)
+                   localStorage.getItem("key");          // 읽기
+                   localStorage.removeItem("key");       // 삭제
+                   */
+                   
+                   userList[userList.length] = user;
+                   
+                   console.log(userList.length, userList);
+                   
+                   localStorage.setItem("users", JSON.stringify(userList));
+                   
+                   /* JSON 데이터형식으로 변환 방법
+                   JSON.stringify(object);  // JSON를 문자열로 변환 
+                   JSON.parse("");          // 문자열를 JSON으로 변환
+                   */
+                   
+                   selectUser();
+               });
+                
+                
+               $("#update").click(function(){
+                   console.log("update");
+                   $("#update").addClass("dn"); // class를 추가 하는것
+                   $("#add").removeClass("dn"); // class를 삭제 하는것
+                   
+                   var user = {};
+                   for(var i = 0; i < tagList.length; i++){
+                       if($(tagList[i]).val() == ""){
+                           alert(tagList[i] + " 없음!");
+                           cssEvent(tagList[i], styleList[0]);
+                           return;
+                       } else {
+                           cssEvent(tagList[i], styleList[1]);
+                           user[tagList[i]] = $(tagList[i]).val();
+                           $(tagList[i]).val(""); // 값 초기화
+                       }
+                   }
+                   
+                   userList.splice(uIndex, 1, user);
+                   console.log(userList.length, userList);   
+                   localStorage.setItem("users", JSON.stringify(userList));
+                   
+                   uIndex = -1;
+                   /*
+                   for(var i = 0; i < tagList.length; i++){
+                       $(tagList[i]).val(""); // 값 초기화
+                   }
+                   */
+                   selectUser();
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+          <h2>New User</h2>
+          <form>
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr" value="">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn btn-success" id="add">추가</button>
+            <button type="button" class="btn btn-info dn" id="update">수정</button>
+          </form>
+        </div>
+
+        <div class="container">
+          <h2>User List Group</h2>
+          <ul class="list-group" id="userList"></ul>
+        </div>
+    </body>
+</html>
