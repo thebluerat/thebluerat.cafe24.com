@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    line-height: 1.6em;
+    text-align: justify;
+    word-break: break-all;
+}
+.project-gallery {
+    display: grid;
+    grid-template-rows: 350px calc(100vh - 700px) 350px;
+}
+.story {
+    display: grid;
+    align-content: center;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.items div {
+    background-size: cover;
+}
+.items.top div:nth-child(1) {
+    background: url(./images/haikyu1.jpg) no-repeat center center;
+}
+.items.top div:nth-child(2) {
+    background: url(./images/haikyu2.jpg) no-repeat center center;
+}
+.items.top div:nth-child(3) {
+    background: url(./images/haikyu3.jpg) no-repeat center center;
+}
+.items.top div:nth-child(4) {
+    background: url(./images/haikyu4.jpg) no-repeat center center;
+}
+.items.top div:nth-child(5) {
+    background: url(./images/haikyu5.jpg) no-repeat center center;
+}
+.items.bottom div:nth-child(1) {
+    background: url(./images/haikyu6.jpg) no-repeat center center;
+}
+.items.bottom div:nth-child(2) {
+    background: url(./images/haikyu7.jpg) no-repeat center center;
+}
+.items.bottom div:nth-child(3) {
+    background: url(./images/haikyu8.jpg) no-repeat center center;
+}
+.items.bottom div:nth-child(4) {
+    background: url(./images/haikyu9.jpg) no-repeat center center;
+}
+.items.bottom div:nth-child(5) {
+    background: url(./images/haikyu10.jpg) no-repeat center center;
+}
+
+@media screen and (max-width: 768px) {
+    .project-gallery {
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+    }
+    .story {
+        grid-row: 1;
+    }
+    .story h1 {
+        font-size: 18px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .items {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .items.top > div, .items.bottom > div {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .project-gallery {
+        grid-template-rows: 1fr 400px 400px;
+        padding: 15px;
+    }
+    .story {
+        grid-row: 1;
+    }
+    .items {
+        height: 150px;
+    }
+    .items.top > div, .items.bottom > div {
+        height: 350px;
+    }
+}
